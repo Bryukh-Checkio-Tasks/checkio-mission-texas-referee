@@ -3,6 +3,7 @@ then you find ambassadors who have sort of a general knowledge of poker, but the
 clergymen, good men, kind-hearted, liberal, sincere, and all that, who did not know the meaning of a "flush". It is enough to make one
 ashamed of the species.<br>
 > -- Mark Twain
+
 [Texas hold'em](http://en.wikipedia.org/wiki/Texas_hold_'em) is a variation of the standard card game of poker.
 Two cards (hole cards) are dealt face down to each player and then five community cards are placed face-up by the dealer.
 And when all openings we need to define what is the combination a player have.
