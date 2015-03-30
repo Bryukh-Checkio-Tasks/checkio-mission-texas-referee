@@ -40,4 +40,5 @@ api.add_listener(
             'python-27': "cover=lambda f,d: return f(str(d))",
             'python-3': None
         },
+        function_name="texas_referee"
     ).on_ready)
