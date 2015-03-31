@@ -1,3 +1,6 @@
+RANKS = "23456789TJQKA"
+SUITS = "scdh"
+
 def texas_referee(cards_str):
     return ""
 
