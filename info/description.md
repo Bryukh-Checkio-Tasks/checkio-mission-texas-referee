@@ -16,17 +16,17 @@ Card ranks (from highest to lower): Ace - "A", King - "K", Queen - "Q", "J" - Ja
 
 Card suits (from lowest to highest): Spades - "s", Clubs - "c", Diamonds - "d", Hearts - "h".
 
-Texas holdem uses classical [poker hand list](http://en.wikipedia.org/wiki/List_of_poker_hands):
+Texas holdem uses the classical [poker hand list](http://en.wikipedia.org/wiki/List_of_poker_hands):
 Straight flush, Four of a kind, Full house, Flush, Straight, Three of a kind, Two Pair, One Pair and High card.
 
-Because of the presence of community cards in Texas hold 'em, different players' hands can often run very close in value.
+Because of the presence of community cards in Texas hold 'em, different players' hands can often come very close in value.
 As a result, it is common for kickers to be used to determine
-the winning hand and also for two hands (or maybe more) to tie.
+the winning hand for cases where two or more hands tie.
 A kicker is a card which is part of the five-card poker hand,
 but is not used in determining a hand's rank. For instance, in the hand A-A-A-K-Q, the king and queen are kickers.
 
-But in our Texas holdem variation ties are impossible because suits are ordering and for
-the same rank cards the highest are determined by the suit. So "Td" are higher than "Tc", but lower then "Jc".
+But in our Texas holdem variation ties are impossible because suits are ordered, meaning the for
+same rank cards the higher value is determined by the suit. So "Td" is higher than "Tc", but lower then "Jc".
 
 Your goal is to choose the best hand with 5 cards and return them as a string, where cards are separated by commas and
 ordering from the highest to lowest value.
@@ -39,7 +39,7 @@ The result: "Qh,Qs,9h,8d,8c". Be careful with order.
 
 
 **How it is used:**
-This concept can be useful for game development. And a good example of combinatorial optimisation process.
+This concept is a good example of combinatorial optimisation process, and could come in handy should you make a poker game in Python.
 
 **Precondition:**
 
