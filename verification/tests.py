@@ -37,7 +37,7 @@ TESTS = {
         },
         {
             "input":  "Ts,2h,Tc,3s,Td,3c,Th",
-            "answer": "Th,Tc,Ts,Tc,3c",
+            "answer": "Th,Td,Ts,Tc,3c",
         },
         {
             "input":  "Ks,9h,Th,Jh,Kd,Kh,8s",
