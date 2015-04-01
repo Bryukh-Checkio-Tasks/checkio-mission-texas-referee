@@ -37,11 +37,11 @@ TESTS = {
         },
         {
             "input":  "Ts,2h,Tc,3s,Td,3c,Th",
-            "answer": "Th,Td,Ts,Tc,3c",
+            "answer": "Th,Td,Tc,Ts,3c",
         },
         {
             "input":  "Ks,9h,Th,Jh,Kd,Kh,8s",
-            "answer": "Kh,Kd,Ks,Th,9h",
+            "answer": "Kh,Kd,Ks,Jh,Th",
         },
         {
             "input":  "2s,3s,4s,5s,2d,7h",
