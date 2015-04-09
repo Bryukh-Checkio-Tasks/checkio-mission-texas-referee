@@ -37,7 +37,7 @@ api.add_listener(
     CheckiOReferee(
         tests=TESTS,
         cover_code={
-            'python-27': "cover=lambda f,d: return f(str(d))",
+            'python-27': "cover=lambda f,d: f(str(d))",
             'python-3': None
         },
         function_name="texas_referee"
