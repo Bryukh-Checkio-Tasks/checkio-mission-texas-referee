@@ -44,16 +44,16 @@ TESTS = {
             "answer": "Kh,Kd,Ks,Jh,Th",
         },
         {
-            "input":  "2s,3s,4s,5s,2d,7h",
-            "answer": "7h,5s,4s,2d,2s",
+            "input":  "2s,3s,4s,5s,2d,7h,8h",
+            "answer": "8h,7h,5s,2d,2s",
         },
         {
-            "input":  "2s,3s,4s,7s,2d,7h",
-            "answer": "7h,7s,4s,2d,2s",
+            "input":  "2s,3s,4s,5s,7s,2d,7h",
+            "answer": "7h,7s,5s,2d,2s",
         },
 
         {
-            "input":  "3h,4h,Th,6s,Ad,Jc",
+            "input":  "3h,4h,Th,6s,Ad,Jc,2h",
             "answer": "Ad,Jc,Th,6s,4h",
         },
 
