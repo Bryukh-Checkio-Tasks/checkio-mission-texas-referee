@@ -12,9 +12,9 @@ You are given a sequence of 7 cards and you should choose the best hand (5 cards
 Card sequence are described as a string, where each card are defined by two character - rank and suit.
 Cards separated by commas.
 
-Card ranks (from highest to lower): Ace - "A", King - "K", Queen - "Q", "J" - Jack, 10 - "T" and from "9" to "2".
+The descending ranks are: "A" (Ace), "K" (King), "Q" (Queen), "J" (Jack), "T" (Ten), and "9" to "2".
 
-Card suits (from lowest to highest): Spades - "s", Clubs - "c", Diamonds - "d", Hearts - "h".
+The descending suits are "h" (hearts), "d" (diamonds), "c" (clubs), "s" (spades).
 
 Texas holdem uses the classical [poker hand list](http://en.wikipedia.org/wiki/List_of_poker_hands):
 Straight flush, Four of a kind, Full house, Flush, Straight, Three of a kind, Two Pair, One Pair and High card.
@@ -25,8 +25,9 @@ the winning hand for cases where two or more hands tie.
 A kicker is a card which is part of the five-card poker hand,
 but is not used in determining a hand's rank. For instance, in the hand A-A-A-K-Q, the king and queen are kickers.
 
-But in our Texas holdem variation ties are impossible because suits are ordered, meaning the for
-same rank cards the higher value is determined by the suit. So "Td" is higher than "Tc", but lower then "Jc".
+In our version of Texas Hold'em cards of differing suits have different values. 
+This means that there is only ever **one** best five-card hand to return.
+So "Td" is higher than "Tc", but lower then "Jc".
 
 Your goal is to choose the best hand with 5 cards and return them as a string, where cards are separated by commas and
 ordering from the highest to lowest value.
