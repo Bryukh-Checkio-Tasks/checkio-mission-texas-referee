@@ -48,8 +48,8 @@ TESTS = {
             "answer": "8h,7h,5s,2d,2s",
         },
         {
-            "input":  "2s,3s,4s,5s,7s,2d,7h",
-            "answer": "7h,7s,5s,2d,2s",
+            "input":  "2c,3s,4s,5s,7s,2d,7h",
+            "answer": "7h,7s,5s,2d,2c",
         },
 
         {
