@@ -1,0 +1,100 @@
+<div class="story">
+    Il y a quelques domaines qui sont impardonnablement négligés dans notre pays, dont le poker.
+    La classe supérieure connait mal le poker.
+    On trouve des ambassadeurs qui ont une vague connaissance générale du poker,
+    mais l'ignorance des gens en matière de poker est épouvantable.
+    J'ai connu des hommes d'église, de braves hommes, au bon coeur, généreux, sincères, qui ignoraient la signification de "flush".
+    C'est suffisant pour avoir honte de l'espèce.<br>
+        -- Mark Twain
+</div>
+<div class="story">
+    There are few things that are so unpardonably neglected in our country as poker. 
+    The upper class knows very little about poker. 
+    Now and then you find ambassadors who have sort of a general knowledge of poker, but the ignorance of the people is fearful. 
+    Why, I have known clergymen, good men, kind-hearted, liberal, sincere, and all that, who did not know the meaning of a "flush". 
+    It is enough to make one ashamed of the species.<br>
+    -- Mark Twain
+</div>
+
+<p>
+    <a href="http://en.wikipedia.org/wiki/Texas_hold_'em">Texas hold'em</a>
+    est une variation du jeu de cartes de poker standard.
+    Deux cartes sont distribuées faces cachées à chaque joueur, puis cinq cartes communes sont exposées au centre
+    faces visibles par le donneur. 
+    Et lors des ouvertures, il nous faut déterminer quelle est la meilleure combinaison à proposer.
+</p>
+
+<p>
+    Vous disposez d'une suite de 7 cartes et il vous faut déterminer la meilleure main de 5 cartes qu'elle contient.
+    La suite de cartes est décrite comme une chaîne de caractères (string), 
+    où chaque carte est désignée par deux caractères - valeur et couleur.
+    Les descriptions de cartes sont séparées par des virgules.
+</p>
+<p>
+    Les valeurs sont, par ordre décroissant: "A" (Ace - As), "K" (King - Roi), "Q" (Queen - Reine), "J" (Jack - Valet),
+    "T" (Ten - Dix), and "9" to "2".<br>
+
+    Les couleurs sont, par ordre décroissant: "h" (hearts - coeur), "d" (diamonds - carreaux),
+    "c" (clubs - trèfle), "s" (spades - pique).
+</p>
+
+<p>
+    
+    <em>Texas Hold'em</em> utilise la <a href="http://en.wikipedia.org/wiki/List_of_poker_hands">liste des mains de poker</a> classique:
+    <em>Straight flush</em>, <em>Four of a kind</em>, <em>Full house</em>, <em>Flush</em>, <em>Straight</em>,
+    <em>Three of a kind</em>, <em>Two Pair</em>, <em>One Pair</em> et <em>High card</em>.
+</p>
+
+<p>
+    En raison de la présence de cartes centrales communes dans Texas hold'em,
+    les mains des différents joueurs ont souvent des valeurs très proches.
+    C'est pour cette raison que l'on utilise souvent des <em>kickers</em> pour départager les mains de même valeur,
+    et désigner un vainqueur. 
+    Un <em>kicker</em> est une carte issue de la main de 5 cartes,
+    qui ne comptait pas pour évaluer la main.
+    Par exemple, dans la main A-A-A-K-Q, le roi (K) et la reine (Q) sont des  kickers.
+</p>
+
+<p>
+    Dans notre version de Texas Hold'em, les cartes de même valeur et de couleurs différentes 
+    sont de forces différentes.
+    Ce qui signifie qu'il y a toujours une meilleure carte dans chaque main de 5 cartes.
+    Ainsi "Td" est plus forte que "Tc", mais moins forte que "Jc".
+</p>
+
+<p>
+    Votre objectif est de choisir la meilleure main de 5 cartes et de la retourner comme chaîne de caractères (string),
+    où les symboles de cartes sont séparés par des virgules, et les cartes sont classées par ordre décroissant.
+    Par exemple : nous avons deux paires de reines (coeur-heart et pique-spade) et de huit (carreau-diamonds et trèfle-club), 
+    et le neuf de coeur-heart pour kicker.
+    Le résultat: "Qh,Qs,9h,8d,8c". Attention à l'ordre.
+</p>
+
+<p>
+    <strong>Input: </strong> Les cartes de la main, comme chaîne de caractères (string).
+</p>
+
+<p>
+    <strong>Output: </strong>La meilleure main, comme chaîne de caractères (string).
+</p>
+
+
+<div class="for_info_only">
+    <strong>Exemple:</strong>
+<textarea data-code="python">texas_referee("Kh,Qh,Ah,9s,2c,Th,Jh") == "Ah,Kh,Qh,Jh,Th"
+texas_referee("Qd,Ad,9d,8d,Td,Jd,7d") == "Qd,Jd,Td,9d,8d",</textarea>
+</div>
+
+<p class="for_info_only">
+    <strong>Application: </strong>
+    Ce concept est un bon exemple d'optimisation de processus combinatoire,
+    et peut vous permettre de programmer un jeu de poker avec Python.
+</p>
+
+<p>
+    <strong>Préconditions:</strong>
+</p>
+<pre>
+cards_quantity == 7
+Toutes les cartes sont correctes et uniques.
+</pre>
